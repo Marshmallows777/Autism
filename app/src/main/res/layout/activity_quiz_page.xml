@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    android:padding="24dp"
+    tools:context=".quizPage">
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Take the quiz"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/options_layout"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:text="What is the question?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/option_bg"
+            android:text="Option A" />
+
+        <Button
+            android:id="@+id/ans2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/option_bg"
+            android:text="Option B" />
+
+        <Button
+            android:id="@+id/ans3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/option_bg"
+            android:text="Option C" />
+
+        <Button
+            android:id="@+id/ans4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/option_bg"
+            android:text="Option D" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/options_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:text="Submit"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_drawable"
+    android:background="@color/coral"
     android:padding="24dp"
     tools:context=".quizPage">
 
@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Take the quiz"
-        android:textColor="@color/white"
+        android:textColor="@color/plaster"
         android:textSize="24dp" />
 
     <TextView
@@ -25,9 +25,9 @@
         android:layout_above="@id/options_layout"
         android:layout_margin="20dp"
         android:gravity="center_horizontal"
-        android:text="What is the question?"
+        android:text=""
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/plaster"
         android:textSize="24dp"
         android:textStyle="bold" />
 
@@ -36,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="invisible">
 
         <Button
             android:id="@+id/ans1"
@@ -44,7 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
-            android:text="Option A" />
+            android:text="Option A"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/ans2"
@@ -52,7 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
-            android:text="Option B" />
+            android:text="Option B"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/ans3"
@@ -60,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
-            android:text="Option C" />
+            android:text="Option C"
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/ans4"
@@ -68,8 +72,83 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
-            android:text="Option D" />
+            android:text="Option D"
+            android:visibility="invisible" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="265dp"
+        android:hint="Type your name"
+        android:textColor="@color/plaster"
+        android:textColorHint="@color/plaster"
+        android:textSize="34dp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp">
+
+        <Button
+            android:id="@+id/decrement"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="dec"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/valueofAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:text="1"
+            android:textColor="@color/plaster"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/increment"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="inc"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="350dp"
+        android:text="Your Age is"
+        android:textColor="@color/plaster"
+        android:textSize="34dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/ageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="350dp"
+        android:text=""
+        android:textColor="@color/plaster"
+        android:textSize="34dp"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/submit_btn"

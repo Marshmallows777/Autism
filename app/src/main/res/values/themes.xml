@@ -2,15 +2,16 @@
     <!-- Base application theme. -->
     <style name="Theme.Login_autism" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/darkpeach</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/plaster</item>
+        <item name="colorPrimaryVariant">@color/plaster</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">#F2D1D1</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/plaster</item>
+        <item name="android:navigationBarColor">@color/coral</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

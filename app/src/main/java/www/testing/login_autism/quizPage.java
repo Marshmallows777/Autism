@@ -6,14 +6,16 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class quizPage extends AppCompatActivity implements View.OnClickListener {
 
-    TextView question;
-    Button ans1, ans2, ans3, ans4, submit_btn;
+    TextView question, valueOfAge, ageText, ageNumber;
+    Button ans1, ans2, ans3, ans4, submit_btn, decrement, increment;
+    EditText name;
 
-    int curr_que_index = 0;
+    int curr_que_index = 0, value = 0;
     String selected = "";
 
     @Override
@@ -34,6 +36,13 @@ public class quizPage extends AppCompatActivity implements View.OnClickListener 
         ans4.setOnClickListener((View.OnClickListener) this);
         submit_btn.setOnClickListener((View.OnClickListener) this);
 
+        name = findViewById(R.id.name_text);
+        decrement = findViewById(R.id.decrement);
+        valueOfAge = findViewById(R.id.valueofAge);
+        increment = findViewById(R.id.increment);
+        ageText = findViewById(R.id.ageText);
+        ageNumber = findViewById(R.id.ageNumber);
+
         newQuestion();
     }
 
@@ -52,8 +61,33 @@ public class quizPage extends AppCompatActivity implements View.OnClickListener 
         }
     }
 
+    public void dec(View view) {
+        if (value == 0) {
+            display(0);
+        } else {
+            display(--value);
+        }
+    }
+
+    public void inc(View view) {
+        display(++value);
+    }
+
+    public void display(int num) {
+        valueOfAge.setText("" + num);
+        ageNumber.setText("" + num);
+    }
+
     void newQuestion() {
-        if (curr_que_index > 3) {
+        if (curr_que_index == 1) {
+            name.setVisibility(View.INVISIBLE);
+            decrement.setVisibility(View.VISIBLE);
+            valueOfAge.setVisibility(View.VISIBLE);
+            increment.setVisibility(View.VISIBLE);
+            ageText.setVisibility(View.VISIBLE);
+            ageNumber.setVisibility(View.VISIBLE);
+        }
+        if (curr_que_index > 2) {
             return;
         }
         question.setText(QnA.questions[curr_que_index]);

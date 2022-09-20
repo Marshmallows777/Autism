@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/drawable/buttoncolour.xml" value="0.226" />
+        <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/drawable/edges.xml" value="0.226" />
         <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/drawable/gradient_drawable.xml" value="0.226" />
         <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/drawable/option_bg.xml" value="0.226" />
+        <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/drawable/view_bg.xml" value="0.226" />
         <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/layout/activity_login.xml" value="0.20742753623188406" />
         <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/layout/activity_main.xml" value="0.20742753623188406" />
         <entry key="..\:/Adarsh/Loginpage-testing-master/app/src/main/res/layout/activity_quiz_page.xml" value="0.20742753623188406" />

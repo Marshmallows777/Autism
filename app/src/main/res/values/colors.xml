@@ -11,4 +11,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="peach">#FFE6E6</color>
     <color name="darkpeach">#F2D1D1</color>
+    <color name="green_page">#D1DDA8</color>
+    <color name="blue_page">#91B4C2</color>
+    <color name="red_page">#DECACE</color>
+    <color name="yellow_page">#E9CEB7</color>
 </resources>

@@ -36,8 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:visibility="invisible">
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/ans1"
@@ -46,6 +45,8 @@
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
             android:text="Option A"
+            android:textColor="@color/coral"
+            android:textSize="16sp"
             android:visibility="invisible" />
 
         <Button
@@ -55,6 +56,8 @@
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
             android:text="Option B"
+            android:textColor="@color/coral"
+            android:textSize="16sp"
             android:visibility="invisible" />
 
         <Button
@@ -64,6 +67,8 @@
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
             android:text="Option C"
+            android:textColor="@color/coral"
+            android:textSize="16sp"
             android:visibility="invisible" />
 
         <Button
@@ -73,6 +78,8 @@
             android:layout_margin="15dp"
             android:background="@drawable/option_bg"
             android:text="Option D"
+            android:textColor="@color/coral"
+            android:textSize="16sp"
             android:visibility="invisible" />
     </LinearLayout>
 
@@ -157,8 +164,9 @@
         android:layout_below="@id/options_layout"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/option_bg"
         android:text="Submit"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
 </RelativeLayout>

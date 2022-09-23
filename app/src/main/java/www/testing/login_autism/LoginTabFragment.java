@@ -47,14 +47,6 @@ public class LoginTabFragment extends Fragment {
         Login.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(700).start();
 
         return root;
-
-//        Login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LoginTabFragment.this, quizPage.class);
-//                startActivity(intent);
-//            }
-//        });
     }
 
     public void onStart() {

@@ -14,4 +14,10 @@
         <item name="android:navigationBarColor">@color/coral</item>
         <!-- Customize your theme here. -->
     </style>
+
+<!--    <style name="myButton">-->
+<!--        <item name="backgroundTint">@color/green_page</item>-->
+<!--        <item name="cornerRadius">15dp</item>-->
+<!--        <item name="android:textColor">@color/coral</item>-->
+<!--    </style>-->
 </resources>

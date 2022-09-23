@@ -1,6 +1,7 @@
 package www.testing.login_autism;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,7 +9,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class quizPage extends AppCompatActivity implements View.OnClickListener {
@@ -16,7 +16,6 @@ public class quizPage extends AppCompatActivity implements View.OnClickListener 
     TextView question, valueOfAge, ageText, ageNumber;
     Button ans1, ans2, ans3, ans4, submit_btn, decrement, increment;
     EditText name;
-    LinearLayout options_layout;
 
     int curr_que_index = 0, value = 0;
     String selected = "";
@@ -133,6 +132,10 @@ public class quizPage extends AppCompatActivity implements View.OnClickListener 
                     startActivity(intent);
                 }
             });
+            ans1.setBackground(ContextCompat.getDrawable(this, R.drawable.ans1_bg));
+            ans2.setBackground(ContextCompat.getDrawable(this, R.drawable.ans2_bg));
+            ans3.setBackground(ContextCompat.getDrawable(this, R.drawable.ans3_bg));
+            ans4.setBackground(ContextCompat.getDrawable(this, R.drawable.ans4_bg));
         }
 
         if (curr_que_index > 4) {

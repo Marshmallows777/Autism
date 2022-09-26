@@ -107,28 +107,28 @@ public class quizPage extends AppCompatActivity implements View.OnClickListener 
             ans1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getApplicationContext(), Peach_colour1.class);
+                    Intent intent = new Intent(getApplicationContext(), splash_peach.class);
                     startActivity(intent);
                 }
             });
             ans2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getApplicationContext(), Rose_colour2.class);
+                    Intent intent = new Intent(getApplicationContext(), splash_rose.class);
                     startActivity(intent);
                 }
             });
             ans3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getApplicationContext(), Green_colour3.class);
+                    Intent intent = new Intent(getApplicationContext(), splash_green.class);
                     startActivity(intent);
                 }
             });
             ans4.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(getApplicationContext(), Blue_colour4.class);
+                    Intent intent = new Intent(getApplicationContext(), splash_blue.class);
                     startActivity(intent);
                 }
             });
